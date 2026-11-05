@@ -48,10 +48,10 @@ services:
     networks:
       - odoo_network
 
-  volumes:
+volumes:
     postgres_data:
     odoo_data:
 
-  networks:
-    odoo_network:
-      driver: bridge
+networks:
+  odoo_network:
+    driver: bridge
